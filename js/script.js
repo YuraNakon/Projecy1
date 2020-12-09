@@ -1,11 +1,19 @@
-let number = 5;
-          
-const leftBorberWidth = 1;
+const numberOfFilms=+prompt('Скільки фільмів ви вже переглянули?', '');
 
-number=10;
-console.log(number);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-console.log(`string text line 1
+const a = prompt('Один з останіх переглянутих фільмів', ''),
+      b = prompt('На скільки ви його оцінюєте?', ''),
+      c = prompt('Один з останіх переглянутих фільмів', ''),
+      d = prompt('На скільки ви його оцінюєте?', '');
 
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-string text line 2`);
+console.log(personalMovieDB);
